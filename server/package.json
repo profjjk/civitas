@@ -5,12 +5,10 @@
   "main": "server.ts",
   "scripts": {
     "build": "npx tsc",
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node dist/server.js",
-    "start:dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/server.js\" \"nodemon --ignore '../client/*'\" \"npm run client\"",
+    "start": "node dist/server.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/server.js\" \"npm run client\"",
     "client": "cd ../client && npm run start",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "concurrently \"npx tsc --watch\" \"nodemon -q dist/server.js\" \"nodemon --ignore '../client/*'\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",

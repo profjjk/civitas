@@ -1,0 +1,35 @@
+@import 'config';
+
+#landing-page {
+  display: flex;
+  justify-content: center;
+
+  form {
+    margin-top: 200px;
+
+    label {
+      margin-right: 20px;
+    }
+
+    input, button {
+      padding: 5px 20px;
+      border-radius: 5px;
+      border: 1px solid $dark;
+      font-size: 1.25rem;
+      font-family: $primary-font;
+    }
+
+    input {
+      width: 600px;
+      font-weight: 300;
+    }
+
+    button {
+      &:hover {
+        background-color: $red;
+        color: white;
+        border-color: $red;
+      }
+    }
+  }
+}

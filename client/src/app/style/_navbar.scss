@@ -1,0 +1,29 @@
+nav {
+  position: fixed;
+  top: 0;
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    height: 40px;
+  }
+
+  ul {
+    display: flex;
+    gap: 60px;
+
+    li {
+      width: 100px;
+      text-align: center;
+      list-style: none;
+      font-size: 1rem;
+    }
+  }
+
+  a.active {
+    font-weight: 500;
+  }
+}
